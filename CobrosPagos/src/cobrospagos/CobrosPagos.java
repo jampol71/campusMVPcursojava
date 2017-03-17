@@ -120,9 +120,11 @@ public class CobrosPagos {
         movimientos[numMovimientos].importe = new BigDecimal(scanner.next());
         
         
-      
+      //Contador del saldo que hay en al cuenta
        
-        
+       
+      
+        /*
         if (movimientos[numMovimientos].tipo.equals(TipoMovimiento.ABONO)){
             
             
@@ -130,7 +132,7 @@ public class CobrosPagos {
             
         };
         
-        
+        */
         
         
         
@@ -165,7 +167,7 @@ public class CobrosPagos {
         
         
         
-        saldo = new BigDecimal(0);
+        //saldo = new BigDecimal(0);
         
         
         (new CobrosPagos()).bucleApp();
