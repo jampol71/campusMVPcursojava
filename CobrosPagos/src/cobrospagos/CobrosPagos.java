@@ -24,7 +24,10 @@ public class CobrosPagos {
     
     
     public BigDecimal saldo = new BigDecimal(0);
+    
+    
 
+    
     final class Movimiento {
         
         Date fechaRegistro;
@@ -55,7 +58,7 @@ public class CobrosPagos {
     
     
     
-    void bucleApp() {
+    void bucleMovimientos() {
         
         
         
@@ -141,6 +144,8 @@ public class CobrosPagos {
             
            System.out.println("Este es el valor de saldo antes de incrementar" + saldo);
             
+           
+           
            saldo.add(movimientos[numMovimientos].importe);
                    
            
@@ -187,12 +192,6 @@ public class CobrosPagos {
     
     
     
-    
-    
-    
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
         
@@ -200,11 +199,19 @@ public class CobrosPagos {
         //saldo = new BigDecimal(0);
         
         
-        (new CobrosPagos()).bucleApp();
+        (new CobrosPagos()).bucleMovimientos();
         
         // TODO code application logic here
     }
     
+    
+    /**
+     * @param args the command line arguments
+   
+
+* 
+* 
+*/
 }
 
 

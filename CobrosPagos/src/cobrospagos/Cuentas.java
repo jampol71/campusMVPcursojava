@@ -42,7 +42,7 @@ public class Cuentas {
                 
                 case CREAR:
                     
-                    //creacionCuenta();
+                    creacionCuenta();
                     
                 break;    
                 case BORRAR:
@@ -98,6 +98,21 @@ public class Cuentas {
        
    }
    
+   int numeroCuenta;
+   
+   
+   void creacionCuenta(){
+       
+       System.out.println("Introduce el nombre de la cuenta: ");
+       
+       Scanner scanner = new Scanner (System.in);
+       
+       numeroCuenta = scanner.nextInt();
+       
+       
+   }
+   
+   /*
    
    public static void main(String[] args) {
         
@@ -112,7 +127,7 @@ public class Cuentas {
     }
    
    
-   
+   */
    
 }
 
