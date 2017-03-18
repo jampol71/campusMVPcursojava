@@ -17,11 +17,9 @@ import java.util.Scanner;
 public class CobrosPagos {
     
     
-    enum Opcion { COBRO, PAGO, MOVIMIENTOS, VOLVER};
+    enum Opcion { COBRO, PAGO, MOVIMIENTOS, SALIR};
     
     enum TipoMovimiento { CARGO, ABONO};
-    
-    
     
     public BigDecimal saldo = new BigDecimal(0);
 
@@ -49,20 +47,11 @@ public class CobrosPagos {
     Movimiento[] movimientos = new Movimiento[MAX_MOVIMIENTOS];
     
     
-    
-    
     int numMovimientos = 0;
     
     
     
     void bucleApp() {
-        
-        
-        
-        
-        
-        
-        
         
         Opcion opcion;
         
@@ -89,7 +78,7 @@ public class CobrosPagos {
             System.out.println("En la cuenta hay: ");
             
             
-        }while (opcion != Opcion.VOLVER);
+        }while (opcion != Opcion.SALIR);
         
     }
     
@@ -134,35 +123,16 @@ public class CobrosPagos {
       //Contador del saldo que hay en al cuenta
        
        
-      System.out.println("Este es el valor de importe" + movimientos[numMovimientos].importe);
-        
-        if (movimientos[numMovimientos].tipo.equals(TipoMovimiento.ABONO) == true){
+      
+        /*
+        if (movimientos[numMovimientos].tipo.equals(TipoMovimiento.ABONO)){
             
             
-           System.out.println("Este es el valor de saldo antes de incrementar" + saldo);
-            
-           saldo.add(movimientos[numMovimientos].importe);
-                   
-           
-           System.out.println("Este es el valor de saldo despues de incrementar" + saldo);
+           BigDecimal saldo = saldo.add(movimientos[numMovimientos].importe);
             
         };
         
-        
-        if (movimientos[numMovimientos].tipo.equals(TipoMovimiento.CARGO) == true){
-            
-            
-            
-            
-            saldo.subtract(movimientos[numMovimientos].importe);
-            
-            
-        }
-        
-        
-        System.out.println(saldo);
-        
-        
+        */
         
         
         
