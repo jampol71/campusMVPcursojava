@@ -111,6 +111,9 @@ public class CobrosPagos {
         
         System.out.print("\nIntroduce el numero de opción a ejecutar: ");
         opcion = peticion.nextInt();
+    
+        
+       
         
         return Opcion.values() [opcion]; 
         
@@ -146,7 +149,7 @@ public class CobrosPagos {
             
            
            
-           saldo.add(movimientos[numMovimientos].importe);
+           saldo = saldo.add(movimientos[numMovimientos].importe);
                    
            
            System.out.println("Este es el valor de saldo despues de incrementar" + saldo);
@@ -159,7 +162,7 @@ public class CobrosPagos {
             
             
             
-            saldo.subtract(movimientos[numMovimientos].importe);
+            saldo = saldo.subtract(movimientos[numMovimientos].importe);
             
             
         }
